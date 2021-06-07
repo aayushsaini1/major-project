@@ -2,6 +2,7 @@ import {
   Container,
   Grid,
   Center,
+  SimpleGrid,
   GridItem,
   HStack,
   VStack,
@@ -35,28 +36,26 @@ export default function Home() {
           Graph
         </Heading>
         <MyGraph />
-        <VStack pt="12">
-          <Heading pb="8">How it Works?</Heading>
-          <HStack>
-            <Cards cardHeading="Web Scrapping" cardImg="/webscrap.svg" />
 
-            <Cards cardHeading="Feature Engineering" cardImg="/engg.svg" />
+        <Heading pt="24" pb="8">
+          How it Works?
+        </Heading>
+        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} gap="4">
+          <Cards cardHeading="Web Scrapping" cardImg="/webscrap.svg" />
 
-            <Cards cardHeading="Tensorization" cardImg="/tensorflow.svg" />
-          </HStack>
-          <HStack>
-            <Cards cardHeading="Model GRU" cardImg="/gru.svg" />
+          <Cards cardHeading="Feature Engineering" cardImg="/engg.svg" />
 
-            <Cards
-              cardHeading="Hyper Parameter Tunings"
-              cardImg="/tuning.svg"
-            />
+          <Cards cardHeading="Tensorization" cardImg="/tensorflow.svg" />
 
-            <Cards cardHeading="Deploy" cardImg="/deploy.svg" />
-          </HStack>
-        </VStack>
+          <Cards cardHeading="Model GRU" cardImg="/gru.svg" />
+
+          <Cards cardHeading="Hyper Parameter Tunings" cardImg="/tuning.svg" />
+
+          <Cards cardHeading="Deploy" cardImg="/deploy.svg" />
+        </SimpleGrid>
+
         <Center py="12">
-          <Text fontSize="md" color="gray.600">
+          <Text fontSize="md" color="gray.500">
             Made by Sahil & Aayush
           </Text>
         </Center>

@@ -5,9 +5,7 @@ function Navbar() {
   return (
     <Box boxShadow="md" p="10">
       <HStack>
-        <Heading size="md" color="gray.700">
-          Stock Market Analysis
-        </Heading>
+        <Heading size="md">Stock Market Analysis</Heading>
       </HStack>
     </Box>
   );

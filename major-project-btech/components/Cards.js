@@ -6,16 +6,16 @@ function Cards(props) {
   return (
     <>
       <Center
-        border="solid 1px #e5e5e5"
+        border="solid 1px #171923"
         borderRadius="2xl"
-        maxW="24vw"
         p="8"
-        w="24vw"
+        w="full"
         h="64"
+        bg="gray.700"
       >
         <VStack>
           <Image src={props.cardImg} maxW="28" h="24" pb="2" />
-          <Heading size="md" color="gray.700">
+          <Heading size="md" color="gray.100">
             {props.cardHeading}
           </Heading>
         </VStack>
