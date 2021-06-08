@@ -41,17 +41,37 @@ export default function Home() {
           How it Works?
         </Heading>
         <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} gap="4">
-          <Cards cardHeading="Web Scrapping" cardImg="/webscrap.svg" />
+          <Cards
+            cardHeading="Web Scrapping"
+            cardImg="/webscrap.svg"
+            imgAlt="web scrapping"
+          />
 
-          <Cards cardHeading="Feature Engineering" cardImg="/engg.svg" />
+          <Cards
+            cardHeading="Feature Engineering"
+            cardImg="/engg.svg"
+            imgAlt="feature engineering"
+          />
 
-          <Cards cardHeading="Tensorization" cardImg="/tensorflow.svg" />
+          <Cards
+            cardHeading="Tensorization"
+            cardImg="/tensorflow.svg"
+            imgAlt="tensorization"
+          />
 
-          <Cards cardHeading="Model GRU" cardImg="/gru.svg" />
+          <Cards
+            cardHeading="Model GRU"
+            cardImg="/gru.svg"
+            imgAlt="GRU model"
+          />
 
-          <Cards cardHeading="Hyper Parameter Tunings" cardImg="/tuning.svg" />
+          <Cards
+            cardHeading="Hyper Parameter Tunings"
+            cardImg="/tuning.svg"
+            imgAlt="hyper parameter tuning"
+          />
 
-          <Cards cardHeading="Deploy" cardImg="/deploy.svg" />
+          <Cards cardHeading="Deploy" cardImg="/deploy.svg" imgAlt="deploy" />
         </SimpleGrid>
 
         <Center py="12">

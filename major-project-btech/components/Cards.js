@@ -14,7 +14,13 @@ function Cards(props) {
         bg="gray.700"
       >
         <VStack>
-          <Image src={props.cardImg} maxW="28" h="24" pb="2" />
+          <Image
+            src={props.cardImg}
+            maxW="28"
+            h="24"
+            pb="2"
+            alt={props.imgAlt}
+          />
           <Heading size="md" color="gray.100">
             {props.cardHeading}
           </Heading>
